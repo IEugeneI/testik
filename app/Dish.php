@@ -8,4 +8,5 @@ class Dish extends Model
 {
     //
     protected $table = 'dish';
+    protected $primaryKey = 'id_dish';
 }

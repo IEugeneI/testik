@@ -14,6 +14,7 @@ class CreateDishTable extends Migration
     public function up()
     {
         Schema::create('dish', function (Blueprint $table) {
+            $table->bigIncrements('id_dish');
             $table->integer('id_recipe');
             $table->integer('id_ingredient');
             $table->integer('col');
